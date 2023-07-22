@@ -124,7 +124,7 @@ namespace BfresLibrary.Core
             Half[] values = new Half[count];
             for (int i = 0; i < count; i++)
             {
-                values[i] = self.ReadHalf();
+                values[i] = (Half)self.ReadHalf();
             }
             return values;
         }
@@ -727,7 +727,7 @@ namespace BfresLibrary.Core
         private static Vector4F Read_16_Single(this BinaryDataReader self)
         {
             return new Vector4F(
-                self.ReadHalf(),
+                (float)self.ReadHalf(),
                 0,
                 0,
                 0);
@@ -876,8 +876,8 @@ namespace BfresLibrary.Core
         private static Vector4F Read_16_16_Single(this BinaryDataReader self)
         {
             return new Vector4F(
-                self.ReadHalf(),
-                self.ReadHalf(),
+                (float)self.ReadHalf(),
+                (float)self.ReadHalf(),
                 0,
                 0);
         }
@@ -1075,10 +1075,10 @@ namespace BfresLibrary.Core
         private static Vector4F Read_16_16_16_16_Single(this BinaryDataReader self)
         {
             return new Vector4F(
-                self.ReadHalf(),
-                self.ReadHalf(),
-                self.ReadHalf(),
-                self.ReadHalf());
+                (float)self.ReadHalf(),
+                (float)self.ReadHalf(),
+                (float)self.ReadHalf(),
+                (float)self.ReadHalf());
         }
 
         private static Vector4F Read_16_16_16_16_UIntToSingle(this BinaryDataReader self)

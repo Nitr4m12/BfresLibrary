@@ -347,6 +347,11 @@ namespace BfresLibrary
             return result.Single;
         }
 
+        public static explicit operator Half(System.Half v)
+        {
+            throw new NotImplementedException();
+        }
+
         // ---- METHODS (PUBLIC) ---------------------------------------------------------------------------------------
 
         /// <summary>

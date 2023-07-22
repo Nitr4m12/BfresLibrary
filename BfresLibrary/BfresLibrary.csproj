@@ -1,7 +1,4 @@
-﻿
-
-
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Authors>Syroot;</Authors>
     <AssemblyName>BfresLibrary</AssemblyName>
@@ -16,14 +13,11 @@
     <PackageTags>bfres;cafe;nintendo;nw4f;wiiu;nx;switch;</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://gitlab.com/Syroot/NintenTools.Bfres</RepositoryUrl>
-    <TargetFrameworks>net48;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <VersionPrefix>1.6.0</VersionPrefix>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>BfresLibrary</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="Syroot.BinaryData">
       <HintPath>..\Libraries\Syroot.BinaryData.dll</HintPath>
@@ -34,5 +28,8 @@
     <Reference Include="Syroot.NintenTools.NSW.Bntx">
       <HintPath>..\Libraries\Syroot.NintenTools.NSW.Bntx.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

@@ -356,3 +356,6 @@ Toolbox/Lib.zip
 yuzu-glsl-decompiler
 AnimSetupPrevious.zip
 AnimSetupNew.zip
+
+# Visual Studio
+.vs
